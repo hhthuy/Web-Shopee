@@ -1,0 +1,34 @@
+/* File base.css: code css cau hinh thanh phan chung *
+*/
+/* =======Dựng base CSS======= */
+/* Khai báo biến CSS */
+:root{
+    --white-color: #fff;
+    --back-color: #000;
+    --text-color: #333;
+}
+/* Áp dụng tất cả thuộc tính CSS lên phần tử HTML đc nhúng file base.css */
+*{
+    box-sizing: inherit; /*kế thừa từ thẻ chứa nó có thuộc tính là box-sizing*/
+}
+
+html{
+    font-size: 62.5%;/* 1rem = 16px(100%) => HACK: 100%:16px = 62.5% => 1 rem = 10px => p{1.2 rem = 12px }*/
+    line-height: 1.6rem;/* chiều cao của mỗi dòng chữ */
+    font-family: 'Roboto', sans-serif;/* https://fonts.google.com/specimen/Roboto?query=Christian+Robertson&preview.text=Roboto&preview.text_type=custom */
+    box-sizing: border-box;/*kế thừa cac thuộc tính box-sizing: border-box*/
+}
+/* Responsive */
+.grid{
+    width: 1200px;/* PC có kích thước > 1200px thì width tối đa của .grid chỉ 1200px */
+    max-width: 100%;/* < 1200px thì max-width giảm kích thước của .grid = 1200px */
+    margin: 0 auto;/* Tự động căn giữa khối này khi nằm trong khối khác */
+}
+
+.grid__full-width{
+    width: 100%;/* Sd .grid__full-width khi không muốn width: 1200px */
+}
+.grid__row{
+    display: flex;/* Những thẻ trong(.grid__row) nằm 1 hàng ngang */
+    flex-wrap: wrap;/* chiều ngang vượt quá thì nhảy xuống hàng */
+}
