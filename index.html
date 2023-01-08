@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,9 +9,136 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400, 500, 700&display=swap&subset=vietnamese" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.2.1-web/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400, 500, 700&display=swap&subset=vietnamese"
+        rel="stylesheet">
+    <link rel="icon" href="./assets/img/Logo-Shopee.png" type="image/x-icon" />
 </head>
+
 <body>
-    
+    <div class="app">
+        <!-- Hearder -->
+        <header class="header">
+            <div class="grid">
+                <nav class="header__navbar">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item--displayQR header__navbar-item--separate">
+                            Vào cửa hàng trên ứng dụng F8-Shop
+                            <!-- Header QR Code -->
+                            <div class="header__qr">
+                                <img src="./assets/img/QR_code.png" alt="QR code" class="header__qr-img">
+                                <div class="header__qr-apps">
+                                    <a href="" class="header__qr-link">
+                                        <img src="./assets/img/Google_Play.png" alt="Google Play"
+                                            class="header__qr-download-img">
+                                    </a>
+                                    <a href="" class="header__qr-link">
+                                        <img src="./assets/img/App_Store.png" alt="App Store"
+                                            class="header__qr-download-img">
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="header__navbar-item">
+                            <span class="header__navbar-title--noPointer">Kết nối</span>
+                            <a href="" class="header__navbar-icon-link">
+                                <i class="header__navbar-icon fa-brands fa-facebook"></i>
+                            </a>
+                            <a href="" class="header__navbar-icon-link">
+                                <i class="header__navbar-icon fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item-hasNotify">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="header__navbar-icon fa-solid fa-bell"></i>
+                                Thông báo
+                            </a>
+                            <div class="header__notify">
+                                <header class="header__notify-header">
+                                    <h3>Thông báo mới nhận</h3>
+                                </header>
+                                <ul class="header__notify-list">
+                                    <li class="header__notify-item header__notify-item--viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="https://cf.shopee.vn/file/729b0ad9237a50944ebd1851fd994685" alt=""
+                                                class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">TẾT KHAO LỚN - DEAL GIẢM ĐẾN
+                                                    50%</span>
+                                                <span class="header__notify-description">Thời trang, công nghệ, bách
+                                                    hóa...Sắm sửa đón tết gì cũng sale hết</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item">
+                                        <a href="" class="header__notify-link">
+                                            <img src="https://storage.googleapis.com/ops-shopee-files-live/live/shopee-blog/2022/05/ed41fbab-1200x800-1.jpg"
+                                                alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">VOUCHER của bạn sắp hết hạn!!!</span>
+                                                <span class="header__notify-description">
+                                                    Thuy Ho ơi! Voucher Giảm giá và 2 voucher nữa sẽ hết hạn vào 23:59,
+                                                    ngày 08/01! Xài ngay kẻo tiếc nhé!
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item">
+                                        <a href="" class="header__notify-link">
+                                            <img src="https://cf.shopee.sg/file/f95545bf4c67f97e48afec076fec447f" alt=""
+                                                class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">COMBO FREESHIP HOÀN XU ĐANG CHỜ</span>
+                                                <span class="header__notify-description">Voucher Freeship đến 55,000đ.
+                                                    Bộ mã hoàn xu đến 70.000đ. Sale 50% thương hiệu: MBL. Cuckoo, Sopha.
+                                                    Tưng bưng ưu đã, sắm Tết bao la.</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item">
+                                        <a href="" class="header__notify-link">
+                                            <img src="https://salt.tikicdn.com/ts/brickv2og/05/7b/ae/c8276abcb804f3584b95ce5991b41970.png"
+                                                alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">HÀNG QUỐC TẾ SALE TỚI 50%</span>
+                                                <span class="header__notify-description">Thêm Voucher Freeship 15.000Đ.
+                                                    Săn mã hot 100.000Đ. Xã kho nghỉ teets. Mua là “bồ kết”.</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <footer class="header__notify-footer">
+                                    <a href="" class="header__notify-footer-btn">Xem tất cả</a>
+                                </footer>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="header__navbar-icon fa-regular fa-circle-question"></i>
+                                Trợ giúp
+                            </a>
+                        </li>
+                        <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate">Đăng
+                            ký</li>
+                        <li class="header__navbar-item header__navbar-item--strong">Đăng nhập</li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Container -->
+        <div class="container">
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+
+        </footer>
+    </div>
 </body>
+
 </html>

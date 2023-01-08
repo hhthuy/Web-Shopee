@@ -3,8 +3,9 @@
 /* =======Dựng base CSS======= */
 /* Khai báo biến CSS */
 :root{
+    --primary-color: #ee4b2b;
     --white-color: #fff;
-    --back-color: #000;
+    --black-color: #000;
     --text-color: #333;
 }
 /* Áp dụng tất cả thuộc tính CSS lên phần tử HTML đc nhúng file base.css */
@@ -32,3 +33,17 @@ html{
     display: flex;/* Những thẻ trong(.grid__row) nằm 1 hàng ngang */
     flex-wrap: wrap;/* chiều ngang vượt quá thì nhảy xuống hàng */
 }
+
+
+/* Animation */
+@keyframes fadeIn {
+    /* fadeIn: Hiện dần lên*/
+    /* Header QR code CSS*/
+    from{
+        opacity: 0;/* ẩn đi */
+    }
+    to{
+        opacity: 1;
+    }
+}
+
