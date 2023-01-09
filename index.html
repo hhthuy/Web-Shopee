@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400, 500, 700&display=swap&subset=vietnamese"
         rel="stylesheet">
     <link rel="icon" href="./assets/img/Logo-Shopee.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./assets/registerForm.js">
 </head>
 
 <body>
@@ -121,7 +122,7 @@
                                 Trợ giúp
                             </a>
                         </li>
-                        <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate">Đăng
+                        <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate js-register-form">Đăng
                             ký</li>
                         <li class="header__navbar-item header__navbar-item--strong">Đăng nhập</li>
                     </ul>
@@ -141,16 +142,14 @@
     </div>
     <!-- End: <div class="app">-->
 
-    <!-- Base modal: Thành phần chung -->
-    <!-- modal: chiem het man hinh -->
-    <!-- modal__overlay: Lớp phủ mờ trang web phía sau -->
-    <!--modal__body: form -->
-    <div class="modal">
+
+    <!-- Start Modal-->
+    <div class="modal js-modal">
         <div class="modal__overlay"></div>
         <div class="modal__body">
             <!--Register form-->
-            <!-- <div class="auth-form">
-                <div class="auth-form__container">
+            <div class="auth-form">
+                <div class="auth-form__container js-modal-register">
                     <div class="auth-form__header">
                         <h3 class="auth-form__heading">Đăng ký</h3>
                         <span class="auth-form__switch-btn">Đăng nhập</span>
@@ -190,11 +189,9 @@
                         <span class="auth-form__socials-title">Kết nối với Google</span>
                     </a>
                 </div>
-            </div> -->
-            <!-- End Register form-->
-
+            </div>
             <!--Login form-->
-            <div class="auth-form">
+            <!-- <div class="auth-form">
                 <div class="auth-form__container">
                     <div class="auth-form__header">
                         <h3 class="auth-form__heading">Đăng nhập</h3>
@@ -235,12 +232,14 @@
                         <span class="auth-form__socials-title">Google</span>
                     </a>
                 </div>
-            </div>
-            <!-- End Authen form-->
+            </div>  -->
         </div>
-        <!-- End modal body -->
     </div>
     <!-- End modal -->
+
+    <!-- Logic javascript modal -->
+    <script src="./assets/js/registerForm.js"></script>
+    <script src="./assets/js/loginForm.js"></script>
 
 </body>
 
