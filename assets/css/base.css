@@ -93,6 +93,8 @@ html{
     display: flex;
     align-items: center;
     justify-content: center;
+    list-style: none;
+    line-height: 1.6rem;
 }
 .btn.btn--normal:hover{
     background-color: rgba(0,0,0,0.1);

@@ -278,6 +278,8 @@ Nguyên tắc:
     display: flex;/* nam ngang */
     align-items: center;
     justify-content: space-between;/* cach xa */
+    padding: 0 12px;
+    margin-top: 10px;
 }
 .auth-form__heading{
     font-size: 2.2rem;
@@ -355,6 +357,7 @@ Nguyên tắc:
     color: #666; 
     background-color: var(--white-color);
 }
+
 /* icon gg */
 .fa-google {
     background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
@@ -363,6 +366,32 @@ Nguyên tắc:
     color: transparent;
     -webkit-text-fill-color: transparent;
 }
+/* =====CSS form đăng nhập===== */
+.auth-form__socials--sms{
+    color: var(--white-color);
+    background-color: #1ed62e;
+}
+.auth-form__help{
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.auth-form__help-link{
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: #939393;
+}
+.auth-form__help-separate{
+    display: block;
+    height: 22px;
+    margin: 1px 16px 0;
+    border-left: 1px solid #EAEAEA;
+}
+.auth-form__help-forgot{
+    color: var(--primary-color);
+}
+
 
 
 

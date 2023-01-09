@@ -142,14 +142,14 @@
     <!-- End: <div class="app">-->
 
     <!-- Base modal: Thành phần chung -->
+    <!-- modal: chiem het man hinh -->
+    <!-- modal__overlay: Lớp phủ mờ trang web phía sau -->
+    <!--modal__body: form -->
     <div class="modal">
-        <!-- Modal chiem het man hinh -->
-        <div class="modal__overlay"></div><!-- Lớp phủ mờ trang web phía sau -->
+        <div class="modal__overlay"></div>
         <div class="modal__body">
-            <!-- Form -->
-            <!-- Thành phần riêng-->
-            <!-- Authen form: Phan chung cho Form DK/DN -->
-            <div class="auth-form">
+            <!--Register form-->
+            <!-- <div class="auth-form">
                 <div class="auth-form__container">
                     <div class="auth-form__header">
                         <h3 class="auth-form__heading">Đăng ký</h3>
@@ -166,7 +166,7 @@
                             <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu">
                         </div>
                     </div>
-                    <div cl s="auth-form__aside">
+                    <div class="auth-form__aside">
                         <p class="auth-form__policy">
                             Bằng việc đăng kí, bạn đã đồng ý với Shopee về
                             <a href="" class="auth-form__text-link">Điều khoản dịch vụ</a> &
@@ -179,7 +179,7 @@
                         <button class="btn btn--primary">ĐĂNG KÝ</button>
                     </div>
                 </div>
-                <!-- End auth-form__container -->
+
                 <div class="auth-form__socials">
                     <a href="" class="auth-form__socials--fb btn btn--size-s btn--withIcon">
                         <i class="auth-form__socials-icon fa-brands fa-square-facebook"></i>
@@ -190,11 +190,55 @@
                         <span class="auth-form__socials-title">Kết nối với Google</span>
                     </a>
                 </div>
-            </div>
-            <!-- End auth-form -->
+            </div> -->
+            <!-- End Register form-->
 
+            <!--Login form-->
+            <div class="auth-form">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng nhập</h3>
+                        <span class="auth-form__switch-btn">Đăng ký</span>
+                    </div>
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Email của bạn">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                        </div>
+                    </div>
+                    <div cl s="auth-form__aside">
+                        <div class="auth-form__help">
+                            <a href="" class="auth-form__help-link auth-form__help-forgot">Quên mật khẩu</a>
+                            <span class="auth-form__help-separate"></span>
+                            <a href="" class="auth-form__help-link">Trợ giúp</a>
+                        </div>
+                    </div>
+
+                    <div class="auth-form__controls">
+                        <button class="btn auth-form__controls--back btn--normal">TRỞ LẠI</button>
+                        <button class="btn btn--primary">ĐĂNG NHẬP</button>
+                    </div>
+                </div>
+                <div class="auth-form__socials">
+                    <a href="" class="auth-form__socials--sms btn btn--size-s btn--withIcon">
+                        <i class="auth-form__socials-icon fa-solid fa-comment-sms"></i>
+                        <span class="auth-form__socials-title">SMS</span>
+                    </a>
+                    <a href="" class="auth-form__socials--fb btn btn--size-s btn--withIcon">
+                        <i class="auth-form__socials-icon fa-brands fa-square-facebook"></i>
+                        <span class="auth-form__socials-title">Facebook</span>
+                    </a>
+                    <a href="" class="auth-form__socials--gg btn btn--size-s btn--withIcon">
+                        <i class="auth-form__socials-icon fa-brands fa-google"></i>
+                        <span class="auth-form__socials-title">Google</span>
+                    </a>
+                </div>
+            </div>
+            <!-- End Authen form-->
         </div>
-        <!-- End modal__body -->
+        <!-- End modal body -->
     </div>
     <!-- End modal -->
 
