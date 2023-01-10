@@ -21,6 +21,8 @@
 * Modal animation
 * Dựng khung phần tìm kiếm
 * Header tìm kiếm CSS
+* Lịch sử tìm kiếm CSS
+* Header giỏ hàng trống CSS
 ***
 ## Sample
 ![Sample](./assets/img/Sample.png)

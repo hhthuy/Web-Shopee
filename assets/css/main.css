@@ -175,6 +175,7 @@ Nguyên tắc:
 }
 .header__navbar-item-hasNotify:hover .header__notify{
     display: block;/* khi hover hiện ra */
+    z-index: 1;
 }
 .header__notify::before{
     /* Mũi tên chi Thong Bao*/
@@ -414,15 +415,18 @@ Nguyên tắc:
     display: flex;/* nam ngang select*/
     align-items: center;/* can giua */
 }
+
+
 .header__search-input{
-    flex: 1;/* chiem het chieu ngang */
+    /* flex: 1;*/
+    width: 100%;/* input-wrap*/
     height: 100%;
     border: none;
     outline: none;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     color: var(--text-color);
     padding: 0 16px;
-    border-radius: 3px;
+    border-radius: 2px;
 }
 .header__search-select{
     border-left: 1px solid #E8E8E8;
@@ -434,6 +438,7 @@ Nguyên tắc:
 .header__search-select-label{
     font-size: 1.4rem;
     color: var(--text-color);
+    
 }
 .header__search-select-icon{
     font-size: 1.4rem;
@@ -467,7 +472,7 @@ Nguyên tắc:
     list-style: none;/* Ẩn dấu chấm tròn */
     box-shadow: 0 1px 2px #e0e0e0; /*Tạo bóng đổ (x,y, do mo) x,y-gia tri am chay len/trai, duong chay xuong/phai*/
     padding-left: 0;
-    border-radius: 3px;
+    border-radius: 2px;
     display: none;/* An option */
     animation: fadeIn ease-in 0.2s;
 }
@@ -478,12 +483,12 @@ Nguyên tắc:
 
 }
 .header__search-option-item:first-child{
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
 }
 .header__search-option-item:last-child{
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
 }
 .header__search-option-item:hover{
     background-color: #fafafa;
@@ -508,7 +513,7 @@ Nguyên tắc:
     border: none;
     height: 34px;
     width: 60px;
-    border-radius: 3px;
+    border-radius: 2px;
     margin-right: 3px;
     outline: none;
     
@@ -533,6 +538,57 @@ Nguyên tắc:
     font-size: 2.4rem;
     margin-top: 6px;
 }
+/*=====Lịch sử tìm kiếm CSS=====  */
+.header__search-input-wrap{
+    flex: 1;/* ke thua chiem het chieu ngang */
+    height: 100%; 
+    position: relative;
+}
+.header__search-history{
+    position: absolute;
+    top: calc(100% + 2px);
+    left: 0;
+    width: calc(100% - 16px);
+    background-color: var(--white-color);
+    border-radius: 2px;
+    box-shadow: 0 1px 5px rgb(189,189,189);
+    display: none;/* An lich su */
+    overflow: hidden;
+}
+.header__search-history-heading{
+    margin: 8px 12px;
+    font-size: 1.4rem;
+    color: #999;
+    font-weight: 400;
+}
+.header__search-history-list{
+    padding-left: 0;
+    list-style: none;
+    margin: 6px 0 0;
+
+}
+.header__search-history-item{
+    height: 38px;/* can giua chiue cao bang voi chiue cao chua no */
+    padding: 0 12px;
+}
+.header__search-history-item:hover{
+    background-color: #fafafa;
+
+}
+.header__search-history-item a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: var(--text-color);
+    line-height: 38px;/* can giua chiue cao bang voi chiue cao chua no */
+    display: block;
+}
+/* Hien thi lich su tim kiem */
+/* ap dung <div> ngay sau <input> */
+.header__search-input:focus ~ .header__search-history{
+    display: block;
+}
+
+/* =====Header giỏ hàng trống CSS =====*/
 
 
 
