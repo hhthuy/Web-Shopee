@@ -8,6 +8,11 @@
     --black-color: #000;
     --text-color: #333;
     --border-color: #dbdbdb;
+
+    --header-height: 120px;
+    --navbar-height:34px;
+    --header-search-height:calc(var(--header-height) - var(--navbar-height));
+
 }
 /* Áp dụng tất cả thuộc tính CSS lên phần tử HTML đc nhúng file base.css */
 *{
@@ -115,9 +120,8 @@ html{
     padding: 0 8px;
 }
 
-/* FORM */
+/* =====Modal animation=====*/
 /* Form modal Javascript logic */
-/* Modal */
 .modal{
     position: fixed;
     top: 0; right: 0;  left: 0; bottom: 0;
@@ -151,3 +155,5 @@ html{
         transform: scale(var(--growth-to));
     }
 }
+
+/* =====Dựng khung phần tìm kiếm===== */

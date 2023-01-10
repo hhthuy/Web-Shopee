@@ -7,15 +7,20 @@
 ***
 * _Dựng base source_
 * Reset CSS
-* _Dựng base CSS_
-* _Dựng khung web_
+* Dựng base CSS
+* Dựng khung web
 * Navbar CSS
 * Nhúng Font-Icons
 * Icons CSS
 * Header notification CSS
-* _Base modal_
-* _Dựng khung form đăng ký_
+* Base modal
+* Dựng khung form đăng ký
 * CSS form đăng ký
+* CSS form đăng nhập 
+* Javascript form đăng ký
+* Modal animation
+* Dựng khung phần tìm kiếm
+* Header tìm kiếm CSS
 ***
 ## Sample
 ![Sample](./assets/img/Sample.png)
@@ -23,3 +28,4 @@
 > * Reset CSS: https://cdnjs.com/libraries/normalize
 > * Font Roboto: https://fonts.google.com/specimen/Roboto
 > * Font-Icons: https://fontawesome.com/search
+> * Format code: https://webformatter.com/html
