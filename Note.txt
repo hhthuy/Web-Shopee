@@ -1,9 +1,0 @@
-box-sizing: Tùy chỉnh width (height) để thiết lập chiều rộng, chiều cao của tất cả các phần tử. Trong đó bao gồm cả phần đường viền và phần đệm. 
-box-sizing: content-box/border-box/initial/inherit 
-
-- Tạo 1 thẻ chứa toàn bộ website
-- T từng thành phần web
-    Header
-    Container 
-    Footer 
-

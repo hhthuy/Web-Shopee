@@ -528,16 +528,6 @@ Nguyên tắc:
     color: var(--white-color);
 
 }
-.header__cart{
-    width: 150px;
-    text-align: center;
-
-}
-.header__cart-icon{
-    color: var(--white-color);
-    font-size: 2.4rem;
-    margin-top: 6px;
-}
 /*=====Lịch sử tìm kiếm CSS=====  */
 .header__search-input-wrap{
     flex: 1;/* ke thua chiem het chieu ngang */
@@ -589,6 +579,60 @@ Nguyên tắc:
 }
 
 /* =====Header giỏ hàng trống CSS =====*/
+.header__cart{
+    width: 150px;
+    text-align: center;
+    
+}
+.header__cart-icon{
+    color: var(--white-color);
+    font-size: 2.4rem;
+    margin-top: 6px;
+}
+.header__cart-wrap{
+    position: relative;/* hover */
+    display: inline-block;
+    padding: 0 8px;
+    cursor: pointer;
+}
+
+.header__cart-wrap:hover .header__cart-list{
+    display: block;/* hover */
+}
+.header__cart-list{
+    position: absolute;
+    top: calc(100% + 5px);
+    right: -3px;
+    background-color: var(--white-color);
+    width: 400px;
+    border-radius: 2px;
+    box-shadow: 0 1px 3.125rem 0 rgba(0, 0, 0, 0.2);
+    display: none;/* hover(Ẩn de lam hover) */
+    
+}
+.header__cart-list::after{
+    /* mui ten */
+    content: "";
+    position: absolute;
+    right: 3px;
+    top: -26px;
+    border-width: 16px 20px;
+    border-style: solid;
+    border-color: transparent transparent var(--white-color) transparent;/* Nữa dưới hình vuông: top left bottom right (chieu kim dong ho)*/
+    animation: fadeIn ease-in 0.2s;
+}
+.header__cart-list--noCart{
+    padding: 28px 0;
+}
+.header__cart-noCart-img{
+    width: 54%;
+}
+.header__cart-noCart-text{
+    display: block;/* Xuong dong */
+    font-size: 1.4rem;
+    margin-top: 14px;
+    color: var(--text-color);
+}
 
 
 
