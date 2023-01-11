@@ -23,6 +23,7 @@
 * Header tìm kiếm CSS
 * Lịch sử tìm kiếm CSS
 * Header giỏ hàng trống CSS
+* Header cart badge
 ***
 ## Sample
 ![Sample](./assets/img/Sample.png)

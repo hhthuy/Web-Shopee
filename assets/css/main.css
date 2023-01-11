@@ -608,10 +608,11 @@ Nguyên tắc:
     border-radius: 2px;
     box-shadow: 0 1px 3.125rem 0 rgba(0, 0, 0, 0.2);
     display: none;/* hover(Ẩn de lam hover) */
-    
+    cursor: default;
 }
 .header__cart-list::after{
     /* mui ten */
+    cursor: pointer;
     content: "";
     position: absolute;
     right: 3px;
@@ -622,16 +623,37 @@ Nguyên tắc:
     animation: fadeIn ease-in 0.2s;
 }
 .header__cart-list--noCart{
-    padding: 28px 0;
+    padding: 24px 0;
+    text-align: center;
 }
 .header__cart-noCart-img{
     width: 54%;
+    display: none;/* Chua co san pham */
 }
 .header__cart-noCart-text{
     display: block;/* Xuong dong */
     font-size: 1.4rem;
     margin-top: 14px;
     color: var(--text-color);
+}
+/* Header cart badge */
+.header__cart-list--noCart .header__cart-noCart-img,
+.header__cart-list--noCart .header__cart-noCart-text{
+    margin-left: auto;/* can giua */
+    margin-right: auto;/* can giua */
+    display: block;/* Chua co san pham */
+}
+.header__cart-badge{
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    padding: 1px 7px;
+    background-color: var(--white-color);
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    border-radius: 10px;
+    border: 2px solid #EE2D4D;
 }
 
 
