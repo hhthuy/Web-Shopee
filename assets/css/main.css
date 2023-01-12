@@ -27,7 +27,7 @@ Nguyên tắc:
 	Footer
         ...
 */
-
+/* ********** APP HEADER ***********/
 /* ====Navbar CSS=== */
 .header{
     height: var(--header-height);
@@ -837,4 +837,68 @@ Nguyên tắc:
     background-color: #fafafa;
 }
 
+/* **********APP CONTAINER ***********/
+/* =====Danh mục CSS===== */
+.app__container{
+    background-color: #F5F5F5;
+}
+.category{
+    background-color: var(--white-color);
+    border-radius: 2px;
 
+}
+.category__heading{
+    color: var(--text-color);
+    font-size: 1.7rem;
+    padding: 12px 16px;
+    margin-top: 0; /* bo mac dinh */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+.category__heading-icon{
+    font-size: 1.4rem;
+    margin-right: 4px;/* icon - text */
+    position: relative;
+    top: -1px;
+}
+.category-list{
+    padding: 0 0 8px 0;/* Bo mac dinh the <ul> -left:0*/
+    list-style: none;
+    margin-left: 10px;
+
+}
+.category-item{
+
+}
+.category-item--active .category-item__link{
+    color: var(--primary-color);
+    font-weight: 600;
+}
+.category-item--active .category-item__link::before{
+    content: "";
+    position: absolute;
+    top:50%;
+    left: 7px;
+    border:4px solid;
+    transform: translateY(calc(-50% - 1px)); /* chay nguoc len 50% */
+    border-color: transparent transparent transparent var(--primary-color);/* tren - duoi - phai -trai */
+}
+.category-item__link{
+    font-size: 1.4rem;
+    color: var(--text-color);
+    text-decoration: none;
+    display: block; /* block */
+    padding: 4px 16px; /* block */
+    position: relative;/* transition */
+    transition: right linear 0.1s;/* transition */
+    right: 0;/* transition *//* right ban dau la 0, khi cho chuyen dong -4px */
+}
+.category-item__link:hover{
+   right: -4px;/* transition */
+   color: var(--primary-color);/* transition */
+}
+/* =====Dựng khung: Sắp xếp sản phẩm===== */
+/* Home sort + filter */
+.app__content{
+    padding-top: 36px;
+}
+/* ********** APP FOOTER ***********/       

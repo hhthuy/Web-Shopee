@@ -28,6 +28,7 @@
 * Header user info
 * Header fix UI bugs
 * Danh mục: Dựng khung
+* Dựng khung: Sắp xếp sản phẩm
 ***
 ## Sample
 ![Sample](./assets/img/Sample.png)

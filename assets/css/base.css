@@ -111,7 +111,7 @@ html{
     cursor: pointer;
     color: var(--text-color);
     /* can giua */
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     list-style: none;
