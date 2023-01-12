@@ -39,8 +39,10 @@ html{
     display: flex;/* Những thẻ trong(.grid__row) nằm 1 hàng ngang */
     flex-wrap: wrap;/* chiều ngang vượt quá thì nhảy xuống hàng */
 }
-
-
+/* =====Danh mục: Dựng khung===== */
+.grid__column{
+    
+}
 /* Animation */
 @keyframes fadeIn {
     /* fadeIn: Hiện dần lên*/
