@@ -26,6 +26,7 @@
 * Header cart badge
 * Header cart - List products
 * Header user info
+* Header fix UI bugs
 ***
 ## Sample
 ![Sample](./assets/img/Sample.png)

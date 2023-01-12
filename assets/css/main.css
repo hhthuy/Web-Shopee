@@ -55,7 +55,7 @@ Nguyên tắc:
 .header__navbar-item,
 .header__navbar-item-link{
     display: inline-block;/*li nằm trên cùng 1 hàng (Ko cach xa)*/
-    font-size: 1.4rem;
+    font-size: 1.3rem; /*fix UI bugs - Navbar font-size*/
     color: var(--white-color);
     text-decoration: none;/* Bỏ dấu gạch chân <a> */
     font-weight: 300; /* độ dày, mỏng của chữ (1-1000) */
@@ -64,7 +64,7 @@ Nguyên tắc:
 .header__navbar-icon-link:hover,/* Icons CSS */
 .header__navbar-item:hover,
 .header__navbar-item-link:hover{
-    cursor: pointer;
+    cursor: pointer; 
     color: rgba(255,255,255,0.7);/*độ mờ chữ*/
 }
 
@@ -96,6 +96,9 @@ Nguyên tắc:
     text-decoration: none;
 }
 
+.header__navbar-icon-link:nth-child(2){
+    margin-left: 3px;/*fix UI bugs - Navbar social-icons*/
+}
 /* =====Icons CSS===== */
 .header__navbar-icon{
     font-size: 1.8rem;
@@ -152,14 +155,16 @@ Nguyên tắc:
 }
 /* =====Header notification CSS===== */
 .header__notify{
+    z-index: 1;/*fix UI bugs-Notification z-index*/
+    border-radius: 2px;/*fix UI bugs-Notification border-radius*/
     position: absolute;
     top: 118%;/* Đẩy sang trái */
     right: 0;
     width: 400px;
-    border: 1px solid #D3D3D3;
+    border: 1px solid rgba(0,0,0,0.1);
     background-color: var(--white-color);
     cursor: default;
-    transform-origin: calc(100%-20px) right; /* Chuyển động Trái sang Phải ở bên trên */
+    transform-origin: calc(100%-32px) right; /* fix UI bugs - Notification arrow-top offset*//* Chuyển động Trái sang Phải ở bên trên, tu icon bell qua phai -32px*/
     animation: headerNotifyGrowth ease-in 0.2s;/* Tâm điểm của scale hiện ra tu goc trai sau 0.25s*/
     display: none; /*khi hover hiện ra */
     will-change: opacity, transform;/* changes value*/
@@ -403,6 +408,11 @@ Nguyên tắc:
 }
 .header__logo{
     width: 200px;
+}
+.header__logo-link{
+    /*fix UI bugs- Logo link*/
+    color: transparent;/*Bỏ border <a> cho trình duyệt cũ  */
+    text-decoration: none;/* Bỏ dấu gạch ngang <a> */
 }
 .header__logo-img{
     width: 150px;
@@ -758,7 +768,7 @@ Nguyên tắc:
     border-radius: 50%;/* hinh tron */
 }
 .header__navbar-user-name{
-    margin-left: 8px;
+    margin-left: 4px;/*fix UI bugs- Navbar margin between avatar & name*/
     font-size: 1.4rem;
     font-weight: 400;
 }
@@ -803,6 +813,10 @@ Nguyên tắc:
 }
 .header__navbar-user-menuItem{
 
+}
+
+.header__navbar-user-menuItem--separate{
+    border-top: 1px solid rgba(0, 0, 0, 0.05);/*fix UI bugs- User menu separate*/
 }
 .header__navbar-user-menuItem a{
     text-decoration: none;
