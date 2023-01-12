@@ -42,6 +42,7 @@ Nguyên tắc:
     list-style: none; /* Loai bo cham tron ul*/
     padding-left: 0;
     margin: 4px 0 0 0;
+    display: flex;/* Header user info -  can ngang <li>*/
 }
 
 .header__navbar-item{
@@ -70,7 +71,7 @@ Nguyên tắc:
 .header__navbar-item,
 .header__navbar-item-link,
 .header__navbar-icon-link{
-    display: inline-flex;
+    display: flex; /*  */
     align-items: center;
 }
 
@@ -657,6 +658,7 @@ Nguyên tắc:
     border: 2px solid #EE2D4D;
 }
 
+/* =====Header cart - List products===== */
 .header__cart-heading{
     text-align: left;
     margin: 8px 0 8px 12px;
@@ -665,6 +667,7 @@ Nguyên tắc:
     font-weight: 400;
 
 }
+
 .header__cart-list-item{
     padding-left: 0;
     list-style: none;
@@ -741,6 +744,83 @@ Nguyên tắc:
 }
 .header__cart-viewCart:hover{
     background-color: #F05D41;
+}
+/* =====Header user info===== */
+.header__navbar-user{
+    display: flex; /* nam ngang */
+    justify-items: center;  /*can ngang nhau */
+    position: relative; /* relative - absolute  user-menu*/
+    
+}
+.header__navbar-user-img{
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;/* hinh tron */
+}
+.header__navbar-user-name{
+    margin-left: 8px;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+.header__navbar-user:hover .header__navbar-user-menu{
+    /* Khi hover navbar-user thi hien ra  navbar-user-menu*/
+    display: block;/* Hover menu info - hien ra*/
+}
+.header__navbar-user-menu{
+    position: absolute;/* relative - absolute  user-menu*/
+    z-index: 1;/* user info nam tren cart badge*/
+    padding-left: 0; /* Bo padding mac dinh <ul> */
+    top: calc(100% + 4px);
+    right: 0;
+    width: 160px;
+    background-color: var(--white-color);
+    border-radius: 2px;
+    list-style: none;/* an dau cham */
+    box-shadow: 0 1px 2px #e0e0e0;
+    display: none;/* Hover menu info an di*/
+}
+.header__navbar-user-menu::before{
+    /* Mũi tên chi xuong*/
+    content: "";
+    border-width: 20px 27px;
+    border-style: solid;
+    border-color: transparent transparent var(--white-color) transparent;
+    position: absolute;
+    right: 4px;
+    top: -29px;
+}
+.header__navbar-user-menu::after{
+    /* Bóng đổ cho avatar */
+    content: "";
+    display: block;
+    position: absolute;
+    top: -8px;
+    right: 0;
+    width: 50%;
+    height: 8px;
+    /* background-color: #000; */
+
+}
+.header__navbar-user-menuItem{
+
+}
+.header__navbar-user-menuItem a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.4rem;
+    padding: 4px 16px;
+    display: block;
+}
+.header__navbar-user-menuItem a:first-child{
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+.header__navbar-user-menuItem a:last-child{
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+.header__navbar-user-menuItem a:hover{
+    background-color: #fafafa;
 }
 
 

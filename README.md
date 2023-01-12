@@ -24,6 +24,8 @@
 * Lịch sử tìm kiếm CSS
 * Header giỏ hàng trống CSS
 * Header cart badge
+* Header cart - List products
+* Header user info
 ***
 ## Sample
 ![Sample](./assets/img/Sample.png)
