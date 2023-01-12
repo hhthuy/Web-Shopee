@@ -171,4 +171,50 @@ html{
         transform: scale(var(--growth-to));
     }
 }
-
+/* ======CSS: Sắp xếp sản phẩm===== */
+/* Selection */
+.select-input{
+    min-width: 200px;
+    height: 34px;
+    padding: 0 12px;
+    border-radius: 2px;
+    background-color: var(--white-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;/* can giua chieu cao */
+    position: relative;/* list option */
+}
+.select-input___label{
+    font-size: 1.4rem;
+}
+.select-input___icon{
+    font-size: 1.4rem;
+    color: rgb(131, 131, 131);
+    position: relative;
+    top: 1px;
+}
+.select-input:hover .select-input__list{
+    /* Hover select-input thi hien ra select-input__list*/
+    display: block;/* Hover: Hien*/
+}
+.select-input__list{
+    position: absolute; /* list option */
+    left: 0;
+    right: 0;
+    top: 100%;
+    border-radius: 2px;
+    background-color: var(--white-color);
+    padding: 8px 16px; 
+    list-style: none;/* bo cham tron <a>*/
+    display: none;/* Hover: An*/
+}
+.select-input__link{
+    font-size: 1.4rem;
+    color: var(--text-color);
+    text-decoration: none;/* bo dau gach chan <a> */
+    display: block;/* block */
+    padding: 4px 0;/* block */
+}
+.select-input__link:hover{
+    color: var(--primary-color);
+}
