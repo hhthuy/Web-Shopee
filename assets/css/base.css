@@ -13,6 +13,7 @@
     --navbar-height:34px;
     --header-search-height:calc(var(--header-height) - var(--navbar-height));
 
+    -star-gold:#ffce3d;
 }
 /* Áp dụng tất cả thuộc tính CSS lên phần tử HTML đc nhúng file base.css */
 *{

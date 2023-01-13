@@ -1006,11 +1006,11 @@ Nguyên tắc:
     justify-content: space-between; /* cach xa */
     margin: 6px 10px 0;
 }
-
+/* Sản phẩm CSS - Phần 2 */
 /* liked */
 .home-product-item__btn-like{
     border: none;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     padding-left: 0;
     background-color: transparent;
     color: #D5D5D5;
@@ -1022,20 +1022,33 @@ Nguyên tắc:
 
 .home-product-item__rating{
     font-size: 1rem;
-    transform: scale(0.7);
+    transform: scale(0.8);
     transform-origin: right;
     color: #D5D5D5;
+    margin: -1px 0 0 auto;
 }
 
-
+/* Sản phẩm CSS - Phần 3 */
+.home-product-item__star--gold{
+    color: #ffce3d;
+}
+.home-product-item__sold{
+    font-size: 1.2rem;
+    color: var(--text-color);
+    margin-left: 6px;
+}
 .home-product-item__origin{
-
+    display: flex; /* nam ngang */
+    margin: 3px 10px 0;
+    color: #595959;
+    font-size: 1.2rem;
+    font-weight: 300;
 }
 .home-product-item__brand{
-
-}
-.home-product-item__origin{
     
+}
+.home-product-item__origin-name{
+    margin-left: auto;/* nam ngang- cach xa (=justify-content: space-between;) */
 }
 
 .home-product-item__favourite{
