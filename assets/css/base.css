@@ -215,6 +215,7 @@ html{
     padding: 8px 16px; 
     list-style: none;/* bo cham tron <a>*/
     display: none;/* Hover: An*/
+    z-index: 1;
 }
 .select-input__link{
     font-size: 1.4rem;

@@ -119,6 +119,8 @@ Nguyên tắc:
     border-radius: 2px;
     display: none;/*Ẩn đi img QR*/
     animation: fadeIn ease-in 0.3s;/* chuyển động chậm rồi nhanh(ease-in) - thời gian thực thi 1s */
+    z-index: 1;/* Fix UI bugs - Header QR code z-index */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);/* Fix UI bugs - Header QR code z-index */
 }
 
 
@@ -420,7 +422,7 @@ Nguyên tắc:
 }
 .header__search{
     height: 40px;
-    flex: 1;/* Chiem het chieu ngang */
+    flex: 1; /*Chiem het chieu ngang */
     background-color: var(--white-color);
     border-radius: 2px;
     display: flex;/* nam ngang select*/
@@ -429,7 +431,7 @@ Nguyên tắc:
 
 
 .header__search-input{
-    /* flex: 1;*/
+     flex: 1;/**/
     width: 100%;/* input-wrap*/
     height: 100%;
     border: none;
@@ -476,6 +478,7 @@ Nguyên tắc:
 
 }
 .header__search-option{
+    z-index: 1;/*Fix UI bugs - Cart z-index */
     position: absolute;/* select */
     right: 0;
     top: 100%;/* = kich thuoc the chua no */
@@ -546,6 +549,7 @@ Nguyên tắc:
     position: relative;
 }
 .header__search-history{
+    z-index: 1;/* Fix UI bugs - Search selection z-index */
     position: absolute;
     top: calc(100% + 2px);
     left: 0;
@@ -611,6 +615,7 @@ Nguyên tắc:
     display: block; /*hover */
 }
 .header__cart-list{
+    z-index: 1;/*Fix UI bugs - Cart z-index*/
     position: absolute;
     top: calc(100% + 5px);
     right: 1px;
@@ -681,6 +686,8 @@ Nguyên tắc:
 .header__cart-list-item{
     padding-left: 0;
     list-style: none;
+    height: 56vh;/*Fix UI bugs - Cart z-index (view port height)*/
+    overflow-y: auto;/*Fix UI bugs - Cart z-index */    /* auto = scroll */
 }
 .header__cart-item{
     display: flex; /* Img & Info nam ngang */
@@ -707,11 +714,20 @@ Nguyên tắc:
     justify-content: space-between; /* Name & Price cach xa */
  
 }
+
 .header__cart-item-name{
     font-size: 1.4rem;
+    line-height: 2rem;/* Fix UI bugs -Cart: product name limiting */
+    height: 4rem;/* Fix UI bugs -Cart: product name limiting *//* 4rem = 2 dong */
+    overflow: hidden;/* Fix UI bugs -Cart: product name limiting */
     font-weight: 500;
     color: var(--text-color);
     margin: 0;/* bo margin mac dinh the <h5> */
+    display: -webkit-box;/* Fix UI bugs -Cart: product name limiting */
+    -webkit-box-orient: vertical;/* Fix UI bugs -Cart: product name limiting */
+    -webkit-line-clamp: 2;/* Fix UI bugs -Cart: product name limiting - 2 dong*/
+    text-align: left;/* Fix UI bugs -Cart: product name limiting*/
+
 }
 .header__cart-item-priceWrap{
     /*  price,mutiply, qnt ko cach xa nhau*/
@@ -780,7 +796,7 @@ Nguyên tắc:
     position: absolute;/* relative - absolute  user-menu*/
     z-index: 1;/* user info nam tren cart badge*/
     padding-left: 0; /* Bo padding mac dinh <ul> */
-    top: calc(100% + 4px);
+    top: calc(100% + 6px);/* Fix UI bugs - User menu offset-top */
     right: 0;
     width: 160px;
     background-color: var(--white-color);
@@ -849,11 +865,12 @@ Nguyên tắc:
 }
 .category__heading{
     color: var(--text-color);
-    font-size: 1.7rem;
-    padding: 12px 16px;
+    font-size: 1.5rem;
+    padding: 16px 16px 0;
     margin-top: 0; /* bo mac dinh */
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-}
+    text-transform: uppercase;/* CHU IN */
+    font-weight:400;
+   }
 .category__heading-icon{
     font-size: 1.4rem;
     margin-right: 4px;/* icon - text */
@@ -867,8 +884,23 @@ Nguyên tắc:
 
 }
 .category-item{
-
+    position: relative;/* Fix UI bugs  - Category style*/
 }
+.category-item:first-child::before{
+    /* Bo border dau tien */
+    display: none;/* Fix UI bugs  - Category style*/
+}
+
+.category-item::before{
+    /* /* Fix UI bugs  - Category style - Them boder */
+    content: "";
+    border-top: 1px solid #E1E1E1;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    right: 20px;
+}
+
 .category-item--active .category-item__link{
     color: var(--primary-color);
     font-weight: 600;
@@ -887,7 +919,7 @@ Nguyên tắc:
     color: var(--text-color);
     text-decoration: none;
     display: block; /* block */
-    padding: 4px 16px; /* block */
+    padding: 6px 20px; /* block */
     position: relative;/* transition */
     transition: right linear 0.1s;/* transition */
     right: 0;/* transition *//* right ban dau la 0, khi cho chuyen dong -4px */
@@ -958,12 +990,30 @@ Nguyên tắc:
     color: #555;
 }
 /* ===== Sản phẩm CSS=====*/
+.home-product{
+    margin-bottom: 10px;
+}
 .home-product-item{
     margin-top: 10px;
     background-color: var(--white-color);
     position: relative;/* Product - Favorite */
+    /* Fix bug UI - Product */
+    border-radius: 2px;
+    box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.1);
+    transition: transform linear 0.1s;
+    will-change: transform;
+    display: block;
+    text-decoration: none; /* Bo gach chan the <a> */
+}
+.home-product-item:hover {
+    /* Fix bug UI - Product */
+    transform: translateY(-1px); /* chay nguoc len */
+    box-shadow: 0 1rem 20rem 0 rgba(0, 0, 0, 0.05);/* Fix bug UI - Product */
 }
 .home-product-item__img{
+
+    border-top-left-radius: 2px;/* Fix UI bugs  -Product border-radius*/ 
+    border-top-right-radius: 2px;/* Fix UI bugs  -Product border-radius*/ 
     padding-top: 100%;/* Khi sd backgroud-image thì padding-top: 100%; cho img 100% là cho chính thằng chứa nó home-product-item 100%*/
     background-repeat: no-repeat;/*Bỏ tính lặp lại ảnh với backgroud-img  */
     background-size: contain;/* item__img chiem het product-item */
@@ -1113,13 +1163,45 @@ Nguyên tắc:
     color: var(--white-color);
 }
 
+/* =====Sản phẩm: CSS nhãn giảm giá===== */
 .home-product-item__saleOff{
+    border-top-right-radius: 2px;/* Fix UI bugs  -Product border-radius*/
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40px;
+    height: 36px;
+    text-align: center;
+    background-color: rgba(255, 216, 66,0.8); /* Trong suot 0.8 */
 
+}
+.home-product-item__saleOff::after{
+    /* 2 Mui ten */
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    /* Border */
+    border-width: 0 20px 6px;
+    border-style: solid;
+    border-color: transparent rgba(255, 216, 66, 0.8) transparent rgba(255, 216, 66,0.8);
 }
 .home-product-item__saleOff-percent{
-
+    color: #EE4D2D;
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    position: relative;
+    /* top: -1px; */
+    top: 4px;
 }
 .home-product-item__saleOff-label{
-
+    color: var(--white-color);
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+    position: relative;
+    /* top: -10px; */
+    top: 4px;
+    font-weight: 600;
 }
 /* ********** APP FOOTER ***********/       
