@@ -26,6 +26,7 @@ html{
     box-sizing: border-box;/*kế thừa cac thuộc tính box-sizing: border-box*/
 }
 /* Responsive */
+/* Grid > Row > Column */
 .grid{
     width: 1200px;/* PC có kích thước > 1200px thì width tối đa của .grid chỉ 1200px */
     max-width: 100%;/* < 1200px thì max-width giảm kích thước của .grid = 1200px */

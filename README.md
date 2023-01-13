@@ -3,6 +3,8 @@
 👉 Xem trang web mẫu tại đây: https://f8ubuntu.online/ 🎉🎉
 > [MyReport](https://docs.google.com/document/d/17Dmw9fUJfpM4qIYk1pLFmWJRaSrR5O0e/edit#)
 
+## Sample
+![Sample](./assets/img/Sample.png)
 ### Steps:
 ***
 * _Dựng base source_
@@ -30,9 +32,8 @@
 * Danh mục: Dựng khung
 * Dựng khung: Sắp xếp sản phẩm
 * CSS: Sắp xếp sản phẩm
+* Dựng khung sản phẩm
 ***
-## Sample
-![Sample](./assets/img/Sample.png)
 ### Link:
 > * Reset CSS: https://cdnjs.com/libraries/normalize
 > * Font Roboto: https://fonts.google.com/specimen/Roboto
