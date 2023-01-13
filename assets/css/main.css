@@ -957,5 +957,73 @@ Nguyên tắc:
     font-size: 1.4rem;
     color: #555;
 }
+/* ===== Sản phẩm CSS=====*/
+.home-product-item{
+    margin-top: 10px;
+    background-color: var(--white-color);
+}
+.home-product-item__img{
+    padding-top: 100%;/* Khi sd backgroud-image thì padding-top: 100%; cho img 100% là cho chính thằng chứa nó home-product-item 100%*/
+    background-repeat: no-repeat;/*Bỏ tính lặp lại ảnh với backgroud-img  */
+    background-size: contain;/* item__img chiem het product-item */
+    background-position: center;/* Tâm img giữa khung*/
+}
+.home-product-item__name{
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--text-color);
+    margin: 10px;
+    line-height: 1.8rem;/* (1 dòng) */
+    /*text hien thi 2 dòng & có dấu ... */
+    height: 3.6rem;/*18px(1 dòng)-> 18 x 2dòng = 36px ->  quá 2 dòng thì hiện dấu ... */
+    overflow: hidden;/*overflow: khi đối tượng con nằm ngoài đối tượng cha thì behavor ntn? hidden*/
+    display: block;/*-webkit-box chỉ chạy khi có block*/
+    display: -webkit-box; /*-webkit-box chỉ chạy khi có block*/
+    -webkit-box-orient: vertical; /*Chiều dọc vì text dòng 1 rồi tới dòng 2*/
+    -webkit-line-clamp: 2; /* Hạn chế phần content của 1 khối-> set number line */
+   
+}
+.home-product-item__price{
 
+}
+
+.home-product-item__price-old{
+
+}
+.home-product-item__price-current{
+
+}
+
+.home-product-item__action{
+
+}
+.home-product-item__like{
+
+}
+.home-product-item__rating{
+
+}
+
+.home-product-item__origin{
+
+}
+.home-product-item__brand{
+
+}
+.home-product-item__origin{
+    
+}
+
+.home-product-item__favourite{
+
+}
+.home-product-item__saleOff{
+
+}
+.home-product-item__saleOff-percent{
+
+}
+.home-product-item__saleOff-label{
+
+}
 /* ********** APP FOOTER ***********/       
