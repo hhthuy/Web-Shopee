@@ -961,6 +961,7 @@ Nguyên tắc:
 .home-product-item{
     margin-top: 10px;
     background-color: var(--white-color);
+    position: relative;/* Product - Favorite */
 }
 .home-product-item__img{
     padding-top: 100%;/* Khi sd backgroud-image thì padding-top: 100%; cho img 100% là cho chính thằng chứa nó home-product-item 100%*/
@@ -1051,9 +1052,67 @@ Nguyên tắc:
     margin-left: auto;/* nam ngang- cach xa (=justify-content: space-between;) */
 }
 
+/* ===== Sản phẩm: CSS nhãn yêu thích ===== */
+/* Yeu thich */
 .home-product-item__favourite{
-
+    position: absolute;
+    top: 10px;
+    left: -4px; /* Chòm ra ngoài bên trái -4px*/
+    color: var(--primary-color);/* currentColor la css - an theo mau hien tai */
+    background-color: currentColor;/* currentColor la css - an theo mau hien tai */
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    padding-right: 4px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
 }
+.home-product-item__favourite::after{
+    /* Hinh tam giac sang trai */
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    border-top: 3px solid currentColor;
+    border-left: 3px solid transparent;
+    filter: brightness(60%);/* do sang */
+}
+.home-product-item__favourite i{
+    color: var(--white-color);
+    font-size: 0.9rem;
+    margin: 0 2px 0 5px;
+}
+.home-product-item__favourite span{
+    color: var(--white-color);
+}
+/* Mall */
+.home-product-item__mall{
+    position: absolute;
+    top: 10px;
+    left: -4px; /* Chòm ra ngoài bên trái -4px*/
+    color: #d0011b;/* currentColor la css - an theo mau hien tai */
+    background-color: currentColor;/* currentColor la css - an theo mau hien tai */
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    padding-right: 4px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.home-product-item__mall::after{
+    /* Hinh tam giac sang trai */
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    border-top: 3px solid currentColor;
+    border-left: 3px solid transparent;
+    filter: brightness(60%);/* do sang */
+}
+.home-product-item__mall span{
+    color: var(--white-color);
+}
+
 .home-product-item__saleOff{
 
 }

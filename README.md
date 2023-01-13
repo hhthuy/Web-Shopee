@@ -33,7 +33,8 @@
 * Dựng khung: Sắp xếp sản phẩm
 * CSS: Sắp xếp sản phẩm
 * Dựng khung sản phẩm
-* CSS Sản phẩm 
+* CSS Sản phẩm: Name-Price-Like-Star Product
+* Sản phẩm: CSS nhãn yêu thích
 ***
 ### Link:
 > * Reset CSS: https://cdnjs.com/libraries/normalize
