@@ -972,7 +972,7 @@ Nguyên tắc:
     font-size: 1.4rem;
     font-weight: 400;
     color: var(--text-color);
-    margin: 10px;
+    margin: 10px 10px 6px;
     line-height: 1.8rem;/* (1 dòng) */
     /*text hien thi 2 dòng & có dấu ... */
     height: 3.6rem;/*18px(1 dòng)-> 18 x 2dòng = 36px ->  quá 2 dòng thì hiện dấu ... */
@@ -981,28 +981,52 @@ Nguyên tắc:
     display: -webkit-box; /*-webkit-box chỉ chạy khi có block*/
     -webkit-box-orient: vertical; /*Chiều dọc vì text dòng 1 rồi tới dòng 2*/
     -webkit-line-clamp: 2; /* Hạn chế phần content của 1 khối-> set number line */
-   
 }
 .home-product-item__price{
-
+    display: flex;/* chieu ngang */
+    align-items: baseline;
+    flex-wrap: nowrap;/* Khi giá quá nhiều số thì giá tự nhảy xuống dòng */
 }
 
 .home-product-item__price-old{
-
+    margin-left: 10px;
+    font-size: 1.4rem;
+    color: #666;
+    text-decoration: line-through;/* gach ngang text */
 }
 .home-product-item__price-current{
-
+    margin-left: 10px;
+    font-size: 1.6rem;
+    color: var(--primary-color);
+    margin-left: 6px;
 }
 
 .home-product-item__action{
-
+    display: flex;/* nam ngang */
+    justify-content: space-between; /* cach xa */
+    margin: 6px 10px 0;
 }
-.home-product-item__like{
 
+/* liked */
+.home-product-item__btn-like{
+    border: none;
+    font-size: 1.4rem;
+    padding-left: 0;
+    background-color: transparent;
+    color: #D5D5D5;
 }
+.home-product-item__btn-liked{
+    color: #FD3D30;
+}
+
+
 .home-product-item__rating{
-
+    font-size: 1rem;
+    transform: scale(0.7);
+    transform-origin: right;
+    color: #D5D5D5;
 }
+
 
 .home-product-item__origin{
 
