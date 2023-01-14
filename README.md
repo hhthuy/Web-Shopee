@@ -1,10 +1,10 @@
-# Web-Shopee
-## Build Web Shopee
+# Web-TShopee
+## Build Web TShopee
 👉 Xem trang web mẫu tại đây: https://f8ubuntu.online/ 🎉🎉
 > [MyReport](https://docs.google.com/document/d/17Dmw9fUJfpM4qIYk1pLFmWJRaSrR5O0e/edit#)
 
-## Sample
-![Sample](./assets/img/Sample.png)
+## TShopee
+![MyWebsite](./assets/img/TShopee.png)
 ### Steps:
 ***
 * _Dựng base source_
@@ -35,9 +35,14 @@
 * Dựng khung sản phẩm
 * CSS Sản phẩm: Name-Price-Like-Star Product
 * Sản phẩm: CSS nhãn yêu thích
+* Fix UI bug - Catagory/Product
+* Pagination UI
+* Dựng khung Footer
+* CSS Footer
 ***
 ### Link:
 > * Reset CSS: https://cdnjs.com/libraries/normalize
 > * Font Roboto: https://fonts.google.com/specimen/Roboto
 > * Font-Icons: https://fontawesome.com/search
 > * Format code: https://webformatter.com/html
+> * My Certification: https://drive.google.com/file/d/1AvroCIm7wPev3Tt14u1EQmBJpPrCE80T/view?usp=sharing
