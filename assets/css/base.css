@@ -227,3 +227,36 @@ html{
 .select-input__link:hover{
     color: var(--primary-color);
 }
+/* =====Pagination UI===== */
+.pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none
+}
+.pagination-item{
+    margin: 0 12px;
+}
+.pagination-item--active .pagination-item__link{
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+.pagination-item--active .pagination-item__link:hover{
+    background-color: #ed5c3f;
+}
+.pagination-item__link{
+    --height:30px;
+    display: block; /* <a> Co display: block; moi dat dc chieu ngang */
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 300;
+    color: #939393;
+    min-width: 40px;
+    height: var(--height);
+    line-height: var(--height);/* text Can giua chieu doc = chiue cao cua no*/
+    text-align: center;/* text Can giua chieu ngang */
+    border-radius: 2px;
+}
+.pagination-item-icon{
+
+}

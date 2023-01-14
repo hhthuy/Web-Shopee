@@ -1204,4 +1204,10 @@ Nguyên tắc:
     top: 4px;
     font-weight: 600;
 }
+
+/* =====Pagination UI===== */
+.home-product__pagination{
+    margin: 48px 0 32px 0;
+
+}
 /* ********** APP FOOTER ***********/       
